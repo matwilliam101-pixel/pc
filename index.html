@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula PC Gamer | Maquetación Estructurada</title>
+
+    <!-- Tipografías Gamer -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="layout-container">
+    
+   <!-- ================= 1. ENCABEZADO (CARRUSEL 4 SLIDES) ================= -->
+    <header class="hero-header">
+        <!-- Radio Buttons para control del carrusel -->
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+
+        <!-- Pista del carrusel con las 4 diapositivas -->
+        <div class="carousel-track">
+            <!-- Slide 1 -->
+            <div class="slide slide-1">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>NEBULA PC GAMER</h1>
+                    <h2>Tienda de Computadoras y Hardware</h2>
+                    <p><strong>Descubre el verdadero poder sin límites</strong></p>
+                    <a href="#destacados" class="btn btn-primary">Ver Equipos</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide slide-2">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>POTENCIA GAMER</h1>
+                    <h2>Rendimiento Extremo en 4K</h2>
+                    <p><strong>Ensambles profesionales testeados al 100%</strong></p>
+                    <a href="#destacados" class="btn btn-primary">Explorar GPUs</a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide slide-3">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>SOPORTE Y EXPERTOS</h1>
+                    <h2>Refrigeración Líquida Custom</h2>
+                    <p><strong>Mantenimiento y armado a tu medida</strong></p>
+                    <a href="#contacto" class="btn btn-primary">Cotizar Ahora</a>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide slide-4">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>PERIFÉRICOS RGB</h1>
+                    <h2>Equipa tu Setup al Máximo</h2>
+                    <p><strong>Teclados, audífonos y monitores de alta tasa de refresco</strong></p>
+                    <a href="#destacados" class="btn btn-primary">Ver Ofertas</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones de Navegación Manual (Flechas) -->
+        <!-- Flechas para Slide 1 -->
+        <div class="carousel-nav nav-s1">
+            <label for="slide4" class="nav-arrow nav-left"><i class="fa-solid fa-chevron-left"></i></label>
+            <label for="slide2" class="nav-arrow nav-right"><i class="fa-solid fa-chevron-right"></i></label>
+        </div>
+        <!-- Flechas para Slide 2 -->
+        <div class="carousel-nav nav-s2">
+            <label for="slide1" class="nav-arrow nav-left"><i class="fa-solid fa-chevron-left"></i></label>
+            <label for="slide3" class="nav-arrow nav-right"><i class="fa-solid fa-chevron-right"></i></label>
+        </div>
+        <!-- Flechas para Slide 3 -->
+        <div class="carousel-nav nav-s3">
+            <label for="slide2" class="nav-arrow nav-left"><i class="fa-solid fa-chevron-left"></i></label>
+            <label for="slide4" class="nav-arrow nav-right"><i class="fa-solid fa-chevron-right"></i></label>
+        </div>
+        <!-- Flechas para Slide 4 -->
+        <div class="carousel-nav nav-s4">
+            <label for="slide3" class="nav-arrow nav-left"><i class="fa-solid fa-chevron-left"></i></label>
+            <label for="slide1" class="nav-arrow nav-right"><i class="fa-solid fa-chevron-right"></i></label>
+        </div>
+
+        <!-- Indicadores Inferiores (Puntos / Dots) -->
+        <div class="carousel-dots">
+            <label for="slide1" class="dot dot-1"></label>
+            <label for="slide2" class="dot dot-2"></label>
+            <label for="slide3" class="dot dot-3"></label>
+            <label for="slide4" class="dot dot-4"></label>
+        </div>
+    </header>
+
+    <!-- ================= 2. CUERPO PRINCIPAL (3 COLUMNAS) ================= -->
+    <div class="main-layout">
+        
+        <!-- BARRA LATERAL IZQUIERDA -->
+        <aside class="sidebar-left">
+            <h3 class="section-title">MENÚ</h3>
+            <ul class="vertical-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#equipos">Equipos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </aside>
+
+        <!-- CONTENIDO CENTRAL -->
+        <main class="content-center">
+            <h3 class="section-title text-center">BIENVENIDOS</h3>
+            <p class="welcome-text">Ensamblamos computadoras de alto rendimiento para gaming, streaming y productividad extrema. Componentes de última generación con garantía real y pruebas de estrés para asegurar tu victoria.</p>
+            
+            <h3 id="destacados" class="section-title text-center">EQUIPOS DESTACADOS</h3>
+            <div class="grid-3-cards">
+                <!-- Tarjeta 1: Nebula Alpha V2 -->
+    <div class="card">
+        <div class="card-img-container">
+            <img src="img/cp1.jpg" alt="Nebula Alpha V2">
+        </div>
+        <h3>Nebula Alpha V2</h3>
+        <span class="badge gama-media">Gama Media-Alta</span>
+        <p>Core i5 13400F, 16GB RAM, RTX 4060, 1TB NVMe.</p>
+        <a href="#" class="btn-ver-mas">VER MÁS</a>
+    </div>
+
+    <!-- Tarjeta 2: Nebula Titan RTX -->
+    <div class="card">
+        <div class="card-img-container">
+            <img src="img/cp2.jpg" alt="Nebula Titan RTX">
+        </div>
+        <h3>Nebula Titan RTX</h3>
+        <span class="badge gama-ultra">Gama Ultra</span>
+        <p>Ryzen 7 7800X3D, 32GB RAM, RTX 4080 SUPER.</p>
+        <a href="#" class="btn-ver-mas">VER MÁS</a>
+    </div>
+
+    <!-- Tarjeta 3: ROG Strix G16 -->
+    <div class="card">
+        <div class="card-img-container">
+            <img src="img/cp3.jpg" alt="ROG Strix G16">
+        </div>
+        <h3>ROG Strix G16</h3>
+        <span class="badge gama-laptop">Laptop Gamer</span>
+        <p>Pantalla 165Hz, Core i7, RTX 4070, Portabilidad extrema.</p>
+        <a href="#" class="btn-ver-mas">VER MÁS</a>
+    </div>
+            </div>
+
+            <div class="services-section">
+                <h3 class="section-title text-center">NUESTROS SERVICIOS</h3>
+                <div class="flex-services">
+                    <div class="service-item">
+                        <div class="icon-circle"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h4>Ensamblado</h4>
+                        <p>Gestión de cables y testeo.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon-circle"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+                        <h4>Watercooling</h4>
+                        <p>Líquida custom a medida.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon-circle"><i class="fa-solid fa-gauge-high"></i></div>
+                        <h4>Overclock</h4>
+                        <p>Ajuste de BIOS y perfiles XMP.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon-circle"><i class="fa-solid fa-headset"></i></div>
+                        <h4>Soporte 24/7</h4>
+                        <p>Asistencia técnica remota.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- BARRA LATERAL DERECHA -->
+        <aside class="sidebar-right">
+            <div class="widget">
+                <p class="widget-label">PROMOCIÓN ESPECIAL</p>
+                <div class="placeholder-img small-img"><i class="fa-solid fa-keyboard"></i></div>
+                <h4 class="promo-title">10% OFF</h4>
+                <p class="promo-desc">En periféricos seleccionados por la compra de tu PC.</p>
+                <a href="#" class="btn btn-outline btn-block">Más información</a>
+            </div>
+            
+            <div class="widget align-left">
+                <p class="widget-label text-center">CONTACTO DIRECTO</p>
+                <p class="contact-line"><i class="fa-solid fa-phone"></i> +591 2 2123456</p>
+                <p class="contact-line"><i class="fa-solid fa-envelope"></i> info@nebulapc.com</p>
+                <p class="contact-line"><i class="fa-brands fa-whatsapp"></i> +591 62830389</p>
+                <a href="#" class="btn btn-primary btn-block mt-10">Escríbenos</a>
+            </div>
+            
+            <div class="widget">
+                <p class="widget-label">SÍGUENOS</p>
+                <div class="social-grid">
+                    <a href="#" class="social-box"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-box"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-box"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="social-box"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- ================= 3. SECCIÓN DE CONTACTO (FORMULARIO) ================= -->
+    <section class="contact-form-section">
+        <h3 class="section-title text-center">CONTÁCTANOS</h3>
+        <form class="horizontal-form" action="#" onsubmit="event.preventDefault();">
+            <div class="form-top-row">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="tel" placeholder="Teléfono / WhatsApp" required>
+                <select required>
+                    <option value="" disabled selected>Presupuesto estimado</option>
+                    <option value="entry">Entrada (Gama Básica)</option>
+                    <option value="mid">Media (Gama Media Alta)</option>
+                    <option value="high">Ultra (Gama Alta Extrema)</option>
+                </select>
+            </div>
+            <div class="form-bottom-row">
+                <textarea rows="3" placeholder="Mensaje o especificaciones..." required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- ================= 4. PIE DE PÁGINA (FOOTER) ================= -->
+    <footer class="footer-area">
+        <div class="footer-columns">
+            <div class="f-col">
+                <h4 class="brand-text"><i class="fa-solid fa-bolt"></i> NEBULA PC GAMER</h4>
+                <p class="f-subtitle">Especialistas en Hardware</p>
+                <p>Tu mejor opción para dominar en el mundo digital y los eSports.</p>
+            </div>
+            <div class="f-col">
+                <h4>ENLACES RÁPIDOS</h4>
+                <ul>
+                    <li><a href="#">• Inicio</a></li>
+                    <li><a href="#">• Equipos</a></li>
+                    <li><a href="#">• Servicios</a></li>
+                    <li><a href="#">• Promociones</a></li>
+                </ul>
+            </div>
+            <div class="f-col">
+                <h4>CATEGORÍAS</h4>
+                <ul>
+                    <li><a href="#">• Laptops Gamer</a></li>
+                    <li><a href="#">• PCs de Escritorio</a></li>
+                    <li><a href="#">• Componentes (GPU/CPU)</a></li>
+                    <li><a href="#">• Periféricos RGB</a></li>
+                </ul>
+            </div>
+            <div class="f-col">
+                <h4>CONTACTO</h4>
+                <p>Calle Cochabamba #808</p>
+                <p>Oruro - Bolivia</p>
+                <p>+591 62830389</p>
+                <p>ventas@nebulapc.com.bo</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Nebula PC Gamer - Todos los derechos reservados.
+        </div>
+    </footer>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
